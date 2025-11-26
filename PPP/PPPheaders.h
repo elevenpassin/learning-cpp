@@ -1,23 +1,20 @@
-#ifndef LEARNING_CPP_PPPHEADERS_H
-#define LEARNING_CPP_PPPHEADERS_H
-
 // PPPheaders.h
 
-#include<iostream>
+#include <iostream>
+#include <random>
+#include <span>
 #include <sstream>
-#include<string>
-#include<vector>
-#include<span>
-#include<stdexcept>
-#include<random>
+#include <stdexcept>
+#include <string>
+#include <vector>
 
-#include<stdint.h>
-#include<list>
-#include <map>
-#include<unordered_map>
-#include <set>
-#include<memory>
 #include <algorithm>
+#include <list>
+#include <map>
+#include <memory>
+#include <set>
+#include <stdint.h>
+#include <unordered_map>
 
 #define PPP_EXPORT
 #include "PPP_support.h"
@@ -25,10 +22,7 @@
 using namespace std;
 using namespace PPP;
 
-
 // disgusting macro hack to get a range checking:
 #define vector Checked_vector
 #define string Checked_string
 #define span Checked_span
-
-#endif //LEARNING_CPP_PPPHEADERS_H
